@@ -4,8 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.join(__dirname, '/dist'), // server측 static page 위치로 추후 옮길 것
-        filename: 'index_bundle.js'
+        path: path.resolve(__dirname, '../server/public'), // server측 static page 위치로 추후 옮길 것
+        filename: 'index.js'
     },
     module: {
         rules: [
